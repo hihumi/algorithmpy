@@ -3,7 +3,7 @@
 """liner search
 """
 
-def liner_search(search_data, *data):
+def liner_search(search_data, *args):
     """liner search
 
     引数:
@@ -11,15 +11,15 @@ def liner_search(search_data, *data):
         *data: 検索する配列(list)
 
     返り値, 戻り値:
-        return print('found it: {0}'.format(x)): 
+        return print('found it: {0}'.format(x)):
             検索し該当した位置をprintする
-        return print("not found: {0}".format(not_found)): 
+        return print("not found: {0}".format(not_found)):
             該当なしの場合をprintする
 
     例: data1 = [101, 4, 2, 22, 5]
         liner_search(2, data1)
         実行結果: found it: 2
-        
+
 
     単体テスト: doctest:
     >>> data1 = [101, 4, 2, 22, 5]
@@ -31,12 +31,12 @@ def liner_search(search_data, *data):
     not found: -1
     """
 
-    data_list = list(*data)
+    data_l = list(*args)
 
     not_found = -1
-    
+
     try:
-       for x in data_list:
+       for x in data_l:
            if x == search_data:
                return print('found it: {0}'.format(x))
        else:
@@ -47,8 +47,11 @@ def liner_search(search_data, *data):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+    print()
+    
     data1 = [101, 4, 2, 22, 5]
     liner_search(2, data1)
+    print()
 
     data2 = [0, 0, 0, 0, 0]
     liner_search(2, data2)
