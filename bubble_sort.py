@@ -17,8 +17,7 @@ def bubble_sort(data):
                 w = d_l[i - 1]
                 d_l[i - 1] = d_l[i]
                 d_l[i] = w
-            else:
-                i -= 1
+            i -= 1
         k += 1
     print(d_l)
 
