@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """bubble sort
 """
+
 
 def bubble_sort(data):
     """bubble_sort

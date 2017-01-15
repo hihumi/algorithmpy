@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """my_min
 """
+
 
 def my_min(data):
     """my_min

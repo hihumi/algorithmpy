@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 """odd_num_while
 """
 

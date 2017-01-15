@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
+
 """合計を出力する
 """
+
 
 def my_sum(*data):
     """合計を出力する関数
 
-    引数: 
+    引数:
         *data: 合計する配列(list)
 
     返り値, 戻り値:
@@ -35,7 +37,7 @@ def my_sum(*data):
             res += i
 
     except (TypeError, ValueError) as err:
-        print('Error: {0}'.format(err))
+        print('Error: {}'.format(err))
 
     else:
         print(res)

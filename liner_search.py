@@ -38,17 +38,17 @@ def liner_search(search_data, *args):
     try:
        for x in data_l:
            if x == search_data:
-               return print('found it: {0}'.format(x))
+               return print('found it: {}'.format(x))
        else:
-           return print("not found: {0}".format(not_found))
+           return print("not found: {}".format(not_found))
     except (TypeError, ValueError) as err:
-        print('Error: {0}'.format(err))
+        print('Error: {}'.format(err))
 
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
     print()
-    
+
     data1 = [101, 4, 2, 22, 5]
     liner_search(2, data1)
     print()

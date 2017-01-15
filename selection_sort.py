@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """selection sort
 """
+
 
 def selection_sort(data):
     """selection_sort

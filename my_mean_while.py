@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
+
 """my_mean_while
 """
 
+
 from decimal import Decimal
+
 
 def my_mean_while(data):
     """my_mean_while

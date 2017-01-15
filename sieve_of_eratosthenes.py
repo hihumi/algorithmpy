@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """sieve_of_eratosthenes
 """
+
 
 def sieve_of_eratosthenes(data):
     """sieve_of_eratosthenes

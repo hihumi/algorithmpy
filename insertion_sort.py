@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """insertion_sort
 """
+
 
 def insertion_sort(data):
     """insertion_sort

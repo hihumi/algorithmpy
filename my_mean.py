@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
+
 """算術平均を出力する
 """
+
 
 def my_mean(*data):
     """算術平均を出力する関数
 
-    引数: 
+    引数:
         *data: 合計する配列(list)
 
     返り値, 戻り値:
@@ -38,7 +40,7 @@ def my_mean(*data):
 
     try:
         data_list = list(*data)
-        
+
         my_sum = 0
         for i in data_list:
             my_sum += i
@@ -46,11 +48,11 @@ def my_mean(*data):
         res = my_sum / len(data_list)
 
     except (TypeError, ValueError) as err:
-        print('Error: {0}'.format(err))
+        print('Error: {}'.format(err))
 
     else:
         print(round(res, 2))
-        
+
 
 if __name__ == '__main__':
     import doctest
@@ -66,4 +68,3 @@ if __name__ == '__main__':
 
     data4 = [1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9]
     my_mean(data4)
-

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+
+"""hashing
+"""
+
+
 def d_l1():
     d_l = [12, 25, 36, 20, 30, 8, 42]
     return d_l
@@ -9,6 +14,8 @@ def h_l1():
     return h_l
 
 def hash_func():
+    """hash func
+    """
 
     d_l2 = d_l1()
     h_l2 = h_l1()
@@ -26,6 +33,8 @@ def hash_func():
     return h_l2
 
 def hash_method(search_num):
+    """hash method
+    """
 
     h_l3 = hash_func()
 

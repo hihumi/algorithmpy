@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """my_max
 """
+
 
 def my_max(data):
     """my_max

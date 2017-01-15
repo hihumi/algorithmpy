@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """binary search
 """
+
 
 def binary_search(search_num, *args):
     """binary search
@@ -42,7 +44,7 @@ def binary_search(search_num, *args):
             print('not found...')
 
     except (TypeError, ValueError, ZeroDivisionError) as err:
-        print('Error: {0}'.format(err))
+        print('Error: {}'.format(err))
 
 if __name__ == '__main__':
     import doctest
