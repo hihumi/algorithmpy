@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+
 """liner search
 """
+
 
 def liner_search(search_data, *args):
     """liner search
@@ -36,11 +38,11 @@ def liner_search(search_data, *args):
     not_found = -1
 
     try:
-       for x in data_l:
-           if x == search_data:
-               return print('found it: {}'.format(x))
-       else:
-           return print("not found: {}".format(not_found))
+        for x in data_l:
+            if x == search_data:
+                return print('found it: {}'.format(x))
+        else:
+            return print("not found: {}".format(not_found))
     except (TypeError, ValueError) as err:
         print('Error: {}'.format(err))
 
