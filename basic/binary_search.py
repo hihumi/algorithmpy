@@ -5,11 +5,12 @@
 """
 
 
-def binary_search(search_num, *args):
+def binary_search(search_num, all_data):
     """binary search
 
     引数:
-        *args 探索したい数値(list)
+        search_num: 探索対象の数値
+        all_data: 探索対象の配列(list)
 
     返り値, 戻り値:
         明示的にはなし
@@ -25,18 +26,16 @@ def binary_search(search_num, *args):
     """
 
     try:
-        data_l = list(*args)
-
         head = 0
-        tail = len(data_l) + 1
+        tail = len(all_data) + 1
         center = 0
 
         while head <= tail:
             center = (head + tail) // 2
-            if data_l[center] == search_num:
-                print('find it: index: {}'.format(data_l.index(search_num)))
+            if all_data[center] == search_num:
+                print('find it: index: {}'.format(all_data.index(search_num)))
                 break
-            elif data_l[center] < search_num:
+            elif all_data[center] < search_num:
                 head = center + 1
             else:
                 tail = center - 1
@@ -49,7 +48,6 @@ def binary_search(search_num, *args):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-    print()
 
     data = [11, 13, 17, 19, 23, 29, 31]
     binary_search(17, data)
